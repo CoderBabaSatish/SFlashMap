@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22A772E0083CE572C196BE53 /* Pods_SFlashMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88DC9D0A48600AE4D136033F /* Pods_SFlashMapUITests.framework */; };
+		5C85F4BC73782AFC4EFBF184 /* Pods_SFlashMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128C9D66EE55A4F9BF71569D /* Pods_SFlashMap.framework */; };
+		75B7AF2422478751002219C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B7AF2222478751002219C8 /* Main.storyboard */; };
+		75B7AF2722478751002219C8 /* SFlashMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF2522478751002219C8 /* SFlashMap.xcdatamodeld */; };
+		75B7AF2922478755002219C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75B7AF2822478755002219C8 /* Assets.xcassets */; };
+		75B7AF2C22478755002219C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B7AF2A22478755002219C8 /* LaunchScreen.storyboard */; };
+		75B7AF3722478755002219C8 /* SFlashMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF3622478755002219C8 /* SFlashMapTests.swift */; };
+		75B7AF4222478755002219C8 /* SFlashMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF4122478755002219C8 /* SFlashMapUITests.swift */; };
+		75B7AF5422479AA8002219C8 /* ScooterList.json in Resources */ = {isa = PBXBuildFile; fileRef = 75B7AF5322479AA8002219C8 /* ScooterList.json */; };
+		75B7AF5D2248B9D6002219C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF5C2248B9D6002219C8 /* ViewController.swift */; };
+		75B7AF672248BC43002219C8 /* SFNetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF662248BC43002219C8 /* SFNetworkingHelper.swift */; };
+		75B7AF692248BC73002219C8 /* SFVehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF682248BC73002219C8 /* SFVehicleModel.swift */; };
+		75B7AF6C2248BC82002219C8 /* SFVehicleMArker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6B2248BC82002219C8 /* SFVehicleMArker.swift */; };
+		75B7AF6E2248BCD3002219C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6D2248BCD3002219C8 /* AppDelegate.swift */; };
+		75B7AF702248BCDD002219C8 /* SFVehicleMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */; };
+		75D8FD722248CA3000687B50 /* SFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD712248CA3000687B50 /* SFHelper.swift */; };
+		75D8FD742248CBC900687B50 /* SFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD732248CBC900687B50 /* SFBaseViewController.swift */; };
+		75D8FD772248F15500687B50 /* SFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD762248F15500687B50 /* SFConstant.swift */; };
+		D33DB40B4047D43FA3701D3F /* Pods_SFlashMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BC3DE64C5A5189C8361137 /* Pods_SFlashMapTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75B7AF3322478755002219C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B7AF1322478751002219C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75B7AF1A22478751002219C8;
+			remoteInfo = SFlashMap;
+		};
+		75B7AF3E22478755002219C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75B7AF1322478751002219C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75B7AF1A22478751002219C8;
+			remoteInfo = SFlashMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		128C9D66EE55A4F9BF71569D /* Pods_SFlashMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFlashMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CEE245711491A314B59AEA /* Pods-SFlashMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFlashMapUITests/Pods-SFlashMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72BA425F5E4C316B8E4825CB /* Pods-SFlashMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMapTests.debug.xcconfig"; path = "Target Support Files/Pods-SFlashMapTests/Pods-SFlashMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7529FE42C29D87A67FA20BD4 /* Pods-SFlashMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMapTests.release.xcconfig"; path = "Target Support Files/Pods-SFlashMapTests/Pods-SFlashMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		75B7AF1B22478751002219C8 /* SFlashMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFlashMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B7AF2322478751002219C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75B7AF2622478751002219C8 /* SFlashMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SFlashMap.xcdatamodel; sourceTree = "<group>"; };
+		75B7AF2822478755002219C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75B7AF2B22478755002219C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		75B7AF2D22478755002219C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B7AF3222478755002219C8 /* SFlashMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFlashMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B7AF3622478755002219C8 /* SFlashMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFlashMapTests.swift; sourceTree = "<group>"; };
+		75B7AF3822478755002219C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B7AF3D22478755002219C8 /* SFlashMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFlashMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B7AF4122478755002219C8 /* SFlashMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFlashMapUITests.swift; sourceTree = "<group>"; };
+		75B7AF4322478755002219C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B7AF5322479AA8002219C8 /* ScooterList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ScooterList.json; sourceTree = "<group>"; };
+		75B7AF5C2248B9D6002219C8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		75B7AF662248BC43002219C8 /* SFNetworkingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFNetworkingHelper.swift; sourceTree = "<group>"; };
+		75B7AF682248BC73002219C8 /* SFVehicleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVehicleModel.swift; sourceTree = "<group>"; };
+		75B7AF6B2248BC82002219C8 /* SFVehicleMArker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVehicleMArker.swift; sourceTree = "<group>"; };
+		75B7AF6D2248BCD3002219C8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVehicleMarkerView.swift; sourceTree = "<group>"; };
+		75D8FD712248CA3000687B50 /* SFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFHelper.swift; sourceTree = "<group>"; };
+		75D8FD732248CBC900687B50 /* SFBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseViewController.swift; sourceTree = "<group>"; };
+		75D8FD762248F15500687B50 /* SFConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFConstant.swift; sourceTree = "<group>"; };
+		88DC9D0A48600AE4D136033F /* Pods_SFlashMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFlashMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89BC3DE64C5A5189C8361137 /* Pods_SFlashMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFlashMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F44BB4EE131521F04766632 /* Pods-SFlashMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMap.release.xcconfig"; path = "Target Support Files/Pods-SFlashMap/Pods-SFlashMap.release.xcconfig"; sourceTree = "<group>"; };
+		D410BEBE559B262FAB232D22 /* Pods-SFlashMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMapUITests.release.xcconfig"; path = "Target Support Files/Pods-SFlashMapUITests/Pods-SFlashMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1BF761778CF1AAC84445C79 /* Pods-SFlashMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMap.debug.xcconfig"; path = "Target Support Files/Pods-SFlashMap/Pods-SFlashMap.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75B7AF1822478751002219C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C85F4BC73782AFC4EFBF184 /* Pods_SFlashMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B7AF2F22478755002219C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33DB40B4047D43FA3701D3F /* Pods_SFlashMapTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B7AF3A22478755002219C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A772E0083CE572C196BE53 /* Pods_SFlashMapUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11EF0424B6AEDF0AEBC7E823 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF761778CF1AAC84445C79 /* Pods-SFlashMap.debug.xcconfig */,
+				8F44BB4EE131521F04766632 /* Pods-SFlashMap.release.xcconfig */,
+				72BA425F5E4C316B8E4825CB /* Pods-SFlashMapTests.debug.xcconfig */,
+				7529FE42C29D87A67FA20BD4 /* Pods-SFlashMapTests.release.xcconfig */,
+				69CEE245711491A314B59AEA /* Pods-SFlashMapUITests.debug.xcconfig */,
+				D410BEBE559B262FAB232D22 /* Pods-SFlashMapUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		15667F9CC3C85144388B6967 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				128C9D66EE55A4F9BF71569D /* Pods_SFlashMap.framework */,
+				89BC3DE64C5A5189C8361137 /* Pods_SFlashMapTests.framework */,
+				88DC9D0A48600AE4D136033F /* Pods_SFlashMapUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75B7AF1222478751002219C8 = {
+			isa = PBXGroup;
+			children = (
+				75B7AF1D22478751002219C8 /* SFlashMap */,
+				75B7AF3522478755002219C8 /* SFlashMapTests */,
+				75B7AF4022478755002219C8 /* SFlashMapUITests */,
+				75B7AF1C22478751002219C8 /* Products */,
+				11EF0424B6AEDF0AEBC7E823 /* Pods */,
+				15667F9CC3C85144388B6967 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75B7AF1C22478751002219C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF1B22478751002219C8 /* SFlashMap.app */,
+				75B7AF3222478755002219C8 /* SFlashMapTests.xctest */,
+				75B7AF3D22478755002219C8 /* SFlashMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75B7AF1D22478751002219C8 /* SFlashMap */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF5F2248BB9C002219C8 /* Application */,
+				75B7AF5B2248B977002219C8 /* ViewController */,
+				75D8FD7A2248F21500687B50 /* TableViewCell */,
+				75B7AF612248BBB0002219C8 /* Networking */,
+				75B7AF602248BBA4002219C8 /* Model */,
+				75B7AF5E2248B9FD002219C8 /* Storyboards */,
+				75B7AF552247A025002219C8 /* Library */,
+				75B7AF5322479AA8002219C8 /* ScooterList.json */,
+				75B7AF2222478751002219C8 /* Main.storyboard */,
+				75B7AF2822478755002219C8 /* Assets.xcassets */,
+				75B7AF2A22478755002219C8 /* LaunchScreen.storyboard */,
+				75B7AF2D22478755002219C8 /* Info.plist */,
+			);
+			path = SFlashMap;
+			sourceTree = "<group>";
+		};
+		75B7AF3522478755002219C8 /* SFlashMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF3622478755002219C8 /* SFlashMapTests.swift */,
+				75B7AF3822478755002219C8 /* Info.plist */,
+			);
+			path = SFlashMapTests;
+			sourceTree = "<group>";
+		};
+		75B7AF4022478755002219C8 /* SFlashMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF4122478755002219C8 /* SFlashMapUITests.swift */,
+				75B7AF4322478755002219C8 /* Info.plist */,
+			);
+			path = SFlashMapUITests;
+			sourceTree = "<group>";
+		};
+		75B7AF552247A025002219C8 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				75D8FD792248F1E200687B50 /* Vendors */,
+				75D8FD782248F1BA00687B50 /* coredata */,
+				75B7AF562247A065002219C8 /* Helpers */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		75B7AF562247A065002219C8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				75D8FD752248F12300687B50 /* Constant */,
+				75B7AF712248C91D002219C8 /* Others */,
+				75B7AF6A2248BC82002219C8 /* Map */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		75B7AF5B2248B977002219C8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF5C2248B9D6002219C8 /* ViewController.swift */,
+				75D8FD732248CBC900687B50 /* SFBaseViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		75B7AF5E2248B9FD002219C8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		75B7AF5F2248BB9C002219C8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF6D2248BCD3002219C8 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		75B7AF602248BBA4002219C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF682248BC73002219C8 /* SFVehicleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75B7AF612248BBB0002219C8 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF652248BBDE002219C8 /* Encoding */,
+				75B7AF642248BBD5002219C8 /* Service */,
+				75B7AF632248BBCD002219C8 /* Manager */,
+				75B7AF622248BBC4002219C8 /* EndPoint */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		75B7AF622248BBC4002219C8 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		75B7AF632248BBCD002219C8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		75B7AF642248BBD5002219C8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF662248BC43002219C8 /* SFNetworkingHelper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		75B7AF652248BBDE002219C8 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		75B7AF6A2248BC82002219C8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */,
+				75B7AF6B2248BC82002219C8 /* SFVehicleMArker.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		75B7AF712248C91D002219C8 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				75D8FD712248CA3000687B50 /* SFHelper.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		75D8FD752248F12300687B50 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				75D8FD762248F15500687B50 /* SFConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		75D8FD782248F1BA00687B50 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF2522478751002219C8 /* SFlashMap.xcdatamodeld */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		75D8FD792248F1E200687B50 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		75D8FD7A2248F21500687B50 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75B7AF1A22478751002219C8 /* SFlashMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B7AF4622478755002219C8 /* Build configuration list for PBXNativeTarget "SFlashMap" */;
+			buildPhases = (
+				A811C8C99C298CCE44EDDF7E /* [CP] Check Pods Manifest.lock */,
+				75B7AF1722478751002219C8 /* Sources */,
+				75B7AF1822478751002219C8 /* Frameworks */,
+				75B7AF1922478751002219C8 /* Resources */,
+				A091B0164E78C5E09335F16F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFlashMap;
+			productName = SFlashMap;
+			productReference = 75B7AF1B22478751002219C8 /* SFlashMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75B7AF3122478755002219C8 /* SFlashMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B7AF4922478755002219C8 /* Build configuration list for PBXNativeTarget "SFlashMapTests" */;
+			buildPhases = (
+				F4EEE1697D71AAD57CF74B08 /* [CP] Check Pods Manifest.lock */,
+				75B7AF2E22478755002219C8 /* Sources */,
+				75B7AF2F22478755002219C8 /* Frameworks */,
+				75B7AF3022478755002219C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75B7AF3422478755002219C8 /* PBXTargetDependency */,
+			);
+			name = SFlashMapTests;
+			productName = SFlashMapTests;
+			productReference = 75B7AF3222478755002219C8 /* SFlashMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75B7AF3C22478755002219C8 /* SFlashMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75B7AF4C22478755002219C8 /* Build configuration list for PBXNativeTarget "SFlashMapUITests" */;
+			buildPhases = (
+				606C03A194306286CD19C559 /* [CP] Check Pods Manifest.lock */,
+				75B7AF3922478755002219C8 /* Sources */,
+				75B7AF3A22478755002219C8 /* Frameworks */,
+				75B7AF3B22478755002219C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75B7AF3F22478755002219C8 /* PBXTargetDependency */,
+			);
+			name = SFlashMapUITests;
+			productName = SFlashMapUITests;
+			productReference = 75B7AF3D22478755002219C8 /* SFlashMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75B7AF1322478751002219C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Satish;
+				TargetAttributes = {
+					75B7AF1A22478751002219C8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					75B7AF3122478755002219C8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 75B7AF1A22478751002219C8;
+					};
+					75B7AF3C22478755002219C8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 75B7AF1A22478751002219C8;
+					};
+				};
+			};
+			buildConfigurationList = 75B7AF1622478751002219C8 /* Build configuration list for PBXProject "SFlashMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75B7AF1222478751002219C8;
+			productRefGroup = 75B7AF1C22478751002219C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75B7AF1A22478751002219C8 /* SFlashMap */,
+				75B7AF3122478755002219C8 /* SFlashMapTests */,
+				75B7AF3C22478755002219C8 /* SFlashMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75B7AF1922478751002219C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B7AF5422479AA8002219C8 /* ScooterList.json in Resources */,
+				75B7AF2C22478755002219C8 /* LaunchScreen.storyboard in Resources */,
+				75B7AF2922478755002219C8 /* Assets.xcassets in Resources */,
+				75B7AF2422478751002219C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B7AF3022478755002219C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B7AF3B22478755002219C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		606C03A194306286CD19C559 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFlashMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A091B0164E78C5E09335F16F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFlashMap/Pods-SFlashMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SFlashMap/Pods-SFlashMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SFlashMap/Pods-SFlashMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A811C8C99C298CCE44EDDF7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFlashMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4EEE1697D71AAD57CF74B08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SFlashMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75B7AF1722478751002219C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75D8FD772248F15500687B50 /* SFConstant.swift in Sources */,
+				75B7AF6E2248BCD3002219C8 /* AppDelegate.swift in Sources */,
+				75B7AF2722478751002219C8 /* SFlashMap.xcdatamodeld in Sources */,
+				75D8FD722248CA3000687B50 /* SFHelper.swift in Sources */,
+				75D8FD742248CBC900687B50 /* SFBaseViewController.swift in Sources */,
+				75B7AF6C2248BC82002219C8 /* SFVehicleMArker.swift in Sources */,
+				75B7AF5D2248B9D6002219C8 /* ViewController.swift in Sources */,
+				75B7AF702248BCDD002219C8 /* SFVehicleMarkerView.swift in Sources */,
+				75B7AF692248BC73002219C8 /* SFVehicleModel.swift in Sources */,
+				75B7AF672248BC43002219C8 /* SFNetworkingHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B7AF2E22478755002219C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B7AF3722478755002219C8 /* SFlashMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75B7AF3922478755002219C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B7AF4222478755002219C8 /* SFlashMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75B7AF3422478755002219C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75B7AF1A22478751002219C8 /* SFlashMap */;
+			targetProxy = 75B7AF3322478755002219C8 /* PBXContainerItemProxy */;
+		};
+		75B7AF3F22478755002219C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75B7AF1A22478751002219C8 /* SFlashMap */;
+			targetProxy = 75B7AF3E22478755002219C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75B7AF2222478751002219C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B7AF2322478751002219C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		75B7AF2A22478755002219C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75B7AF2B22478755002219C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75B7AF4422478755002219C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75B7AF4522478755002219C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75B7AF4722478755002219C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BF761778CF1AAC84445C79 /* Pods-SFlashMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VQ8VY439D9;
+				INFOPLIST_FILE = SFlashMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Profile_iOSDevelopment;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75B7AF4822478755002219C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F44BB4EE131521F04766632 /* Pods-SFlashMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = VQ8VY439D9;
+				INFOPLIST_FILE = SFlashMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Profile_iOSDevelopment;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75B7AF4A22478755002219C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BA425F5E4C316B8E4825CB /* Pods-SFlashMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SFlashMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satish.SFlashMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFlashMap.app/SFlashMap";
+			};
+			name = Debug;
+		};
+		75B7AF4B22478755002219C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7529FE42C29D87A67FA20BD4 /* Pods-SFlashMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SFlashMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satish.SFlashMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFlashMap.app/SFlashMap";
+			};
+			name = Release;
+		};
+		75B7AF4D22478755002219C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69CEE245711491A314B59AEA /* Pods-SFlashMapUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SFlashMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satish.SFlashMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SFlashMap;
+			};
+			name = Debug;
+		};
+		75B7AF4E22478755002219C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D410BEBE559B262FAB232D22 /* Pods-SFlashMapUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SFlashMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Satish.SFlashMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SFlashMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75B7AF1622478751002219C8 /* Build configuration list for PBXProject "SFlashMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B7AF4422478755002219C8 /* Debug */,
+				75B7AF4522478755002219C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B7AF4622478755002219C8 /* Build configuration list for PBXNativeTarget "SFlashMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B7AF4722478755002219C8 /* Debug */,
+				75B7AF4822478755002219C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B7AF4922478755002219C8 /* Build configuration list for PBXNativeTarget "SFlashMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B7AF4A22478755002219C8 /* Debug */,
+				75B7AF4B22478755002219C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75B7AF4C22478755002219C8 /* Build configuration list for PBXNativeTarget "SFlashMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75B7AF4D22478755002219C8 /* Debug */,
+				75B7AF4E22478755002219C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		75B7AF2522478751002219C8 /* SFlashMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				75B7AF2622478751002219C8 /* SFlashMap.xcdatamodel */,
+			);
+			currentVersion = 75B7AF2622478751002219C8 /* SFlashMap.xcdatamodel */;
+			path = SFlashMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 75B7AF1322478751002219C8 /* Project object */;
+}
