@@ -71,11 +71,13 @@ class ViewController: SFBaseViewController {
         } else {
             locationManager.requestAlwaysAuthorization()
         }
-        //    if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-        //      mapView.showsUserLocation = true
-        //    } else {
-        //      locationManager.requestWhenInUseAuthorization()
-        //    }
+        /*
+            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+              mapView.showsUserLocation = true
+            } else {
+              locationManager.requestWhenInUseAuthorization()
+            }
+       */
     }
     
     // MARK: - Helper methods
@@ -126,25 +128,26 @@ class ViewController: SFBaseViewController {
 
 extension ViewController: MKMapViewDelegate {
     
-    //   1
-    //  func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-    //    guard let annotation = annotation as? SFVehicleMArker else { return nil }
-    //    // 2
-    //    let identifier = "marker"
-    //    var view: MKMarkerAnnotationView
-    //    if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-    //      as? MKMarkerAnnotationView { // 3
-    //      dequeuedView.annotation = annotation
-    //      view = dequeuedView
-    //    } else {
-    //      // 4
-    //      view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-    //      view.canShowCallout = true
-    //      view.calloutOffset = CGPoint(x: -5, y: 5)
-    //      view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-    //    }
-    //    return view
-    //  }
+     /* 
+      func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? SFVehicleMArker else { return nil }
+        // 2
+        let identifier = "marker"
+        var view: MKMarkerAnnotationView
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+          as? MKMarkerAnnotationView { // 3
+          dequeuedView.annotation = annotation
+          view = dequeuedView
+        } else {
+          // 4
+          view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+          view.canShowCallout = true
+          view.calloutOffset = CGPoint(x: -5, y: 5)
+          view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        return view
+      }
+    */
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {

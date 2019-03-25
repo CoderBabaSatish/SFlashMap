@@ -24,6 +24,7 @@
 		75B7AF702248BCDD002219C8 /* SFVehicleMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */; };
 		75D8FD722248CA3000687B50 /* SFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD712248CA3000687B50 /* SFHelper.swift */; };
 		75D8FD742248CBC900687B50 /* SFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD732248CBC900687B50 /* SFBaseViewController.swift */; };
+		75D8FD772248F15500687B50 /* SFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD762248F15500687B50 /* SFConstant.swift */; };
 		D33DB40B4047D43FA3701D3F /* Pods_SFlashMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89BC3DE64C5A5189C8361137 /* Pods_SFlashMapTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVehicleMarkerView.swift; sourceTree = "<group>"; };
 		75D8FD712248CA3000687B50 /* SFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFHelper.swift; sourceTree = "<group>"; };
 		75D8FD732248CBC900687B50 /* SFBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseViewController.swift; sourceTree = "<group>"; };
+		75D8FD762248F15500687B50 /* SFConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFConstant.swift; sourceTree = "<group>"; };
 		88DC9D0A48600AE4D136033F /* Pods_SFlashMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFlashMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89BC3DE64C5A5189C8361137 /* Pods_SFlashMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFlashMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F44BB4EE131521F04766632 /* Pods-SFlashMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFlashMap.release.xcconfig"; path = "Target Support Files/Pods-SFlashMap/Pods-SFlashMap.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,17 +156,17 @@
 			isa = PBXGroup;
 			children = (
 				75B7AF5F2248BB9C002219C8 /* Application */,
+				75B7AF5B2248B977002219C8 /* ViewController */,
+				75D8FD7A2248F21500687B50 /* TableViewCell */,
 				75B7AF612248BBB0002219C8 /* Networking */,
 				75B7AF602248BBA4002219C8 /* Model */,
 				75B7AF5E2248B9FD002219C8 /* Storyboards */,
-				75B7AF5B2248B977002219C8 /* ViewController */,
 				75B7AF552247A025002219C8 /* Library */,
 				75B7AF5322479AA8002219C8 /* ScooterList.json */,
 				75B7AF2222478751002219C8 /* Main.storyboard */,
 				75B7AF2822478755002219C8 /* Assets.xcassets */,
 				75B7AF2A22478755002219C8 /* LaunchScreen.storyboard */,
 				75B7AF2D22478755002219C8 /* Info.plist */,
-				75B7AF2522478751002219C8 /* SFlashMap.xcdatamodeld */,
 			);
 			path = SFlashMap;
 			sourceTree = "<group>";
@@ -190,6 +192,8 @@
 		75B7AF552247A025002219C8 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				75D8FD792248F1E200687B50 /* Vendors */,
+				75D8FD782248F1BA00687B50 /* coredata */,
 				75B7AF562247A065002219C8 /* Helpers */,
 			);
 			path = Library;
@@ -198,6 +202,7 @@
 		75B7AF562247A065002219C8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				75D8FD752248F12300687B50 /* Constant */,
 				75B7AF712248C91D002219C8 /* Others */,
 				75B7AF6A2248BC82002219C8 /* Map */,
 			);
@@ -291,6 +296,36 @@
 				75D8FD712248CA3000687B50 /* SFHelper.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		75D8FD752248F12300687B50 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				75D8FD762248F15500687B50 /* SFConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		75D8FD782248F1BA00687B50 /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				75B7AF2522478751002219C8 /* SFlashMap.xcdatamodeld */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		75D8FD792248F1E200687B50 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		75D8FD7A2248F21500687B50 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D8FD772248F15500687B50 /* SFConstant.swift in Sources */,
 				75B7AF6E2248BCD3002219C8 /* AppDelegate.swift in Sources */,
 				75B7AF2722478751002219C8 /* SFlashMap.xcdatamodeld in Sources */,
 				75D8FD722248CA3000687B50 /* SFHelper.swift in Sources */,
@@ -706,7 +742,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seer.kuraimijawal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Profile_iOSDevelopment;
 				SWIFT_VERSION = 4.2;
@@ -726,7 +761,6 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.seer.kuraimijawal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = Profile_iOSDevelopment;
 				SWIFT_VERSION = 4.2;
