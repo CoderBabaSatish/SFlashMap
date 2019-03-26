@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 import JGProgressHUD
 
-
+/**
+ * SFBaseViewController - It is se as base view controller
+ * it have basic method
+ */
 class SFBaseViewController: UIViewController {
 
     var hud: JGProgressHUD! = nil

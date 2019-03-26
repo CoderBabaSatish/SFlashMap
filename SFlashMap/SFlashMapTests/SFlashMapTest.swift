@@ -38,5 +38,25 @@ class SFlashMapTest: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
+    //---test initial region-----
+    func test_region_SFlashMap() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mapviewcntrl = storyboard.instantiateInitialViewController() as! ViewController
+        let _ = mapviewcntrl.view
+        XCTAssertEqual(5000, mapviewcntrl.regionRadius)
+    }
+    
+    
+    //---test initial longitude and latitude
+    func test_long_lat_SFlashMap() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mapviewcntrl = storyboard.instantiateInitialViewController() as! ViewController
+        let _ = mapviewcntrl.view
+        XCTAssertEqual(13.391386, mapviewcntrl.initialLocation.longitude)
+        XCTAssertEqual(52.523395, mapviewcntrl.initialLocation.latitude)
+    }
+    
 
 }
