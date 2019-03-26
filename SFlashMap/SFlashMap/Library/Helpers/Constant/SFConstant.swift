@@ -12,6 +12,7 @@ import Foundation
 class SFConstant: NSObject {
     
     let VEHICLES_LIST = "Challenge/vehicles/"
+    let MAP_TITLE     = "GoFlashMap"
 
 }
 //USER_NAME = "username"

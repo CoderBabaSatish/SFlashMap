@@ -14,7 +14,6 @@ class SFServicesEndpoint: NSObject {
     
     
     
-    
     func getServiceUrl(method: String) -> String {
     
         let urlstring = self.baseURL + method
