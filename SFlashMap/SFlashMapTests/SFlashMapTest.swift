@@ -43,49 +43,6 @@ class SFlashMapTest: XCTestCase {
         super.tearDown()
     }
     
-    
-    func testViewControllerIsComposedOfMapView() {
-        
-        XCTAssertNotNil(self.mapviewcntrl.mapView, "ViewController under test is not composed of a MKMapView")
-    }
-    
-    func testControllerConformsToMKMapViewDelegate() {
-        
-      //  XCTAssert(self.mapviewcntrl.conformsToProtocol(MKMapViewDelegate), "ViewController under test does not conform to MKMapViewDelegate protocol")
-    }
-    
-    func testControllerImplementsMKMapViewDelegateMethods() {
-        
-      //  XCTAssert(self.mapviewcntrl.respondsToSelector(Selector("mapView:viewForAnnotation:")), "ViewController under test does not implement mapView:viewForAnnotation")
-    }
-    
-    
-    func testMapInitialization() {
-        
-        XCTAssert(self.mapviewcntrl.mapView == mapviewcntrl.mapView);
-    }
-    
-    
-    func testControllerAddsAnnotationsToMapView() {
-        
-        self.annotationsOnMap = self.mapviewcntrl.mapView.annotations
-        XCTAssertGreaterThan(self.annotationsOnMap.count, 0)
-    }
-
-    
-  
-    func testMapViewDelegateIsSet() {
-        
-        XCTAssertNotNil(self.mapviewcntrl.mapView.delegate)
-    }
-    //---test initial region-----
-    func test_region_SFlashMap() {
-      
-        let _ = self.mapviewcntrl.view
-        XCTAssertEqual(5000, mapviewcntrl.regionRadius)
-    }
-    
-    
     //---test initial longitude and latitude
     func test_long_lat_SFlashMap() {
         
@@ -100,7 +57,49 @@ class SFlashMapTest: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+
+    func testViewControllerIsComposedOfMapView() {
+        
+        XCTAssertNotNil(self.mapviewcntrl.mapView, "ViewController under test is not composed of a MKMapView")
+    }
     
+    func testMapInitialization() {
+
+        XCTAssert(self.mapviewcntrl.mapView == mapviewcntrl.mapView);
+    }
+    
+    func testControllerAddsAnnotationsToMapView() {
+        
+        self.annotationsOnMap = self.mapviewcntrl.mapView.annotations
+        XCTAssertGreaterThan(self.annotationsOnMap.count, 0)
+    }
+
+    func testMapViewDelegateIsSet() {
+        
+        XCTAssertNotNil(self.mapviewcntrl.mapView.delegate)
+    }
+    //---test initial region-----
+    func test_region_SFlashMap() {
+      
+        let _ = self.mapviewcntrl.view
+        XCTAssertEqual(5000, mapviewcntrl.regionRadius)
+    }
+    
+    func testControllerConformsToMKMapViewDelegate() {
+        //Not required in this app
+        //  XCTAssert(self.mapviewcntrl.conformsToProtocol(MKMapViewDelegate), "ViewController under test does not conform to MKMapViewDelegate protocol")
+    }
+    
+    func testControllerImplementsMKMapViewDelegateMethods() {
+         //Not required in this app
+        //  XCTAssert(self.mapviewcntrl.respondsToSelector(Selector("mapView:viewForAnnotation:")), "ViewController under test does not implement mapView:viewForAnnotation")
+    }
+    
+    func testMapViewCanRenderPolygonByImplementingMapViewRendererForOverlay() {
+         //Not required in this app
+     //   XCTAssert(self.mapviewcntrl.respondsToSelector(Selector("mapView:rendererForOverlay:")))
+    }
+
    
     
      /**
@@ -109,8 +108,6 @@ class SFlashMapTest: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
         */
-  
-    
-    // MARK: - Utility
+
 
 }
