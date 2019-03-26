@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import Alamofire
 
-class ViewController: SFBaseViewController {
+class ViewController: SFBaseViewController  {
    
     /**
      *   MARK: - Properties

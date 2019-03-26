@@ -17,6 +17,7 @@ class SFlashMapTest: XCTestCase {
     
      var mapviewcntrl: ViewController!
      var app: XCUIApplication!
+      var annotationsOnMap: [Any]!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -28,6 +29,12 @@ class SFlashMapTest: XCTestCase {
         
         self.mapviewcntrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController
         
+        //load view hierarchy
+        if(mapviewcntrl != nil) {
+            
+            mapviewcntrl.loadView()
+            mapviewcntrl.viewDidLoad()
+        }
     }
     
     override func tearDown() {
@@ -36,6 +43,41 @@ class SFlashMapTest: XCTestCase {
         super.tearDown()
     }
     
+    
+    func testViewControllerIsComposedOfMapView() {
+        
+        XCTAssertNotNil(self.mapviewcntrl.mapView, "ViewController under test is not composed of a MKMapView")
+    }
+    
+    func testControllerConformsToMKMapViewDelegate() {
+        
+      //  XCTAssert(self.mapviewcntrl.conformsToProtocol(MKMapViewDelegate), "ViewController under test does not conform to MKMapViewDelegate protocol")
+    }
+    
+    func testControllerImplementsMKMapViewDelegateMethods() {
+        
+      //  XCTAssert(self.mapviewcntrl.respondsToSelector(Selector("mapView:viewForAnnotation:")), "ViewController under test does not implement mapView:viewForAnnotation")
+    }
+    
+    
+    func testMapInitialization() {
+        
+        XCTAssert(self.mapviewcntrl.mapView == mapviewcntrl.mapView);
+    }
+    
+    
+    func testControllerAddsAnnotationsToMapView() {
+        
+        self.annotationsOnMap = self.mapviewcntrl.mapView.annotations
+        XCTAssertGreaterThan(self.annotationsOnMap.count, 0)
+    }
+
+    
+  
+    func testMapViewDelegateIsSet() {
+        
+        XCTAssertNotNil(self.mapviewcntrl.mapView.delegate)
+    }
     //---test initial region-----
     func test_region_SFlashMap() {
       
@@ -52,14 +94,6 @@ class SFlashMapTest: XCTestCase {
         XCTAssertEqual(52.523395, mapviewcntrl.initialLocation.latitude)
     }
     
-   
-    
-     /**
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
@@ -67,5 +101,16 @@ class SFlashMapTest: XCTestCase {
         }
     }
     
-    */
+   
+    
+     /**
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+        */
+  
+    
+    // MARK: - Utility
+
 }
