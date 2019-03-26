@@ -98,7 +98,9 @@ class ViewController: SFBaseViewController {
         //----show progress indicator----
         self.showProgressView()
         //--Network call---
-        SFNetworkingHelper().initiateNetwordCallGet(method: "") { (response, error) in
+        
+        
+        SFNetworkingHelper().initiateNetwordCallGet(method: SFConstant().VEHICLES_LIST) { (response, error) in
             
             self.vehicleList = (response ?? nil)!
             print("loadInitialData: Sucess", self.vehicleList)

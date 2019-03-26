@@ -22,6 +22,9 @@
 		75B7AF6C2248BC82002219C8 /* SFVehicleMArker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6B2248BC82002219C8 /* SFVehicleMArker.swift */; };
 		75B7AF6E2248BCD3002219C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6D2248BCD3002219C8 /* AppDelegate.swift */; };
 		75B7AF702248BCDD002219C8 /* SFVehicleMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */; };
+		75CD5B48224A275E0044C3AA /* SFlashMapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5B47224A275E0044C3AA /* SFlashMapTest.swift */; };
+		75CD5B4A224A2A400044C3AA /* SFashAccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5B49224A2A400044C3AA /* SFashAccessibilityLabel.swift */; };
+		75CD5B4C224A2C310044C3AA /* SFServicesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5B4B224A2C310044C3AA /* SFServicesEndpoint.swift */; };
 		75D8FD722248CA3000687B50 /* SFHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD712248CA3000687B50 /* SFHelper.swift */; };
 		75D8FD742248CBC900687B50 /* SFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD732248CBC900687B50 /* SFBaseViewController.swift */; };
 		75D8FD772248F15500687B50 /* SFConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D8FD762248F15500687B50 /* SFConstant.swift */; };
@@ -69,6 +72,9 @@
 		75B7AF6B2248BC82002219C8 /* SFVehicleMArker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVehicleMArker.swift; sourceTree = "<group>"; };
 		75B7AF6D2248BCD3002219C8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B7AF6F2248BCDD002219C8 /* SFVehicleMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVehicleMarkerView.swift; sourceTree = "<group>"; };
+		75CD5B47224A275E0044C3AA /* SFlashMapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFlashMapTest.swift; sourceTree = "<group>"; };
+		75CD5B49224A2A400044C3AA /* SFashAccessibilityLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFashAccessibilityLabel.swift; sourceTree = "<group>"; };
+		75CD5B4B224A2C310044C3AA /* SFServicesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFServicesEndpoint.swift; sourceTree = "<group>"; };
 		75D8FD712248CA3000687B50 /* SFHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFHelper.swift; sourceTree = "<group>"; };
 		75D8FD732248CBC900687B50 /* SFBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseViewController.swift; sourceTree = "<group>"; };
 		75D8FD762248F15500687B50 /* SFConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFConstant.swift; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 			children = (
 				75B7AF3622478755002219C8 /* SFlashMapTests.swift */,
 				75B7AF3822478755002219C8 /* Info.plist */,
+				75CD5B47224A275E0044C3AA /* SFlashMapTest.swift */,
+				75CD5B49224A2A400044C3AA /* SFashAccessibilityLabel.swift */,
 			);
 			path = SFlashMapTests;
 			sourceTree = "<group>";
@@ -255,6 +263,7 @@
 		75B7AF622248BBC4002219C8 /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
+				75CD5B4B224A2C310044C3AA /* SFServicesEndpoint.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -558,6 +567,7 @@
 				75B7AF6C2248BC82002219C8 /* SFVehicleMArker.swift in Sources */,
 				75B7AF5D2248B9D6002219C8 /* ViewController.swift in Sources */,
 				75B7AF702248BCDD002219C8 /* SFVehicleMarkerView.swift in Sources */,
+				75CD5B4C224A2C310044C3AA /* SFServicesEndpoint.swift in Sources */,
 				75B7AF692248BC73002219C8 /* SFVehicleModel.swift in Sources */,
 				75B7AF672248BC43002219C8 /* SFNetworkingHelper.swift in Sources */,
 			);
@@ -568,6 +578,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B7AF3722478755002219C8 /* SFlashMapTests.swift in Sources */,
+				75CD5B48224A275E0044C3AA /* SFlashMapTest.swift in Sources */,
+				75CD5B4A224A2A400044C3AA /* SFashAccessibilityLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,4 +8,10 @@
 
 import Foundation
 
+
+class SFConstant: NSObject {
+    
+    let VEHICLES_LIST = "Challenge/vehicles/"
+
+}
 //USER_NAME = "username"

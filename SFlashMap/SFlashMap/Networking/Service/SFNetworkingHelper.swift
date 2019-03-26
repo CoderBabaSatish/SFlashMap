@@ -30,10 +30,10 @@ class SFNetworkingHelper: NSObject {
     
     let request = NSMutableURLRequest()
     let type = Int()
-    let baseURL =  NSURL(string:"https://my-json-server.typicode.com/FlashScooters/Challenge/vehicles/1" as String)
+  //  let baseURL =  NSURL(string:"https://my-json-server.typicode.com/FlashScooters/Challenge/vehicles/1" as String)
     let params = NSObject()
     
-    var urlString = "https://my-json-server.typicode.com/FlashScooters/Challenge/vehicles/"
+   // var urlString = "https://my-json-server.typicode.com/FlashScooters/Challenge/vehicles/"
     
     
     func SFNetworkingHelper(){
@@ -43,8 +43,10 @@ class SFNetworkingHelper: NSObject {
     
     func initiateNetwordCallGet(method: String,completion: @escaping (_ vehicle: [SFVehicleModel]?,_ error: String?)->()){
         
-        
-        Alamofire.request(urlString, method: .get, parameters: nil, encoding: JSONEncoding.default)
+        //--format usr and mathod
+        let serviceURL =  SFServicesEndpoint().getServiceUrl(method: method)
+
+        Alamofire.request(serviceURL, method: .get, parameters: nil, encoding: JSONEncoding.default)
             .downloadProgress(queue: DispatchQueue.global(qos: .utility)) { progress in
                 print("Progress: \(progress.fractionCompleted)")
             }
