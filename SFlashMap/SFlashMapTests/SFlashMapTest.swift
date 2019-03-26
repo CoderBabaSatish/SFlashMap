@@ -16,18 +16,26 @@ import XCTest
 class SFlashMapTest: XCTestCase {
     
      var mapviewcntrl: ViewController!
+     var app: XCUIApplication!
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
         continueAfterFailure = false
-       // XCUIApplication.launch(<#T##XCUIApplication#>)
+        app = XCUIApplication()
+        app.launch()
         XCUIDevice.shared.orientation = .portrait
-    
-        self.mapviewcntrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as! ViewController
+       
+        
+        self.mapviewcntrl = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController
         
     }
     
-
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        mapviewcntrl = nil
+        super.tearDown()
+    }
+    
     //---test initial region-----
     func test_region_SFlashMap() {
       
@@ -44,12 +52,9 @@ class SFlashMapTest: XCTestCase {
         XCTAssertEqual(52.523395, mapviewcntrl.initialLocation.latitude)
     }
     
-
-    /**
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+   
     
+     /**
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
